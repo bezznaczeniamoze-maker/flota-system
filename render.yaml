@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: flota-system
+    runtime: node
+    plan: free
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
